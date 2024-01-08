@@ -1,1 +1,54 @@
-
+<!doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" ></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Humanity Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title" >Humanity Survey Form</h1>
+    <p id="description" ><cite>Thank you for contributing to our organization</cite></p>
+    <form method="post" id="survey-form" >
+      <label for="having-read"><input id="having-read" required type="checkbox" class="inline" value="1" /> I have read the terms and conditions and am 100% aware (Crucial) </label>
+      <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" class="inline" required value="2" /> I agree to the terms and conditions (It is important for us that you agree before joining)</label>
+      <fieldset>
+        <label id="name-label" for="name" >Name: <input class="inline" id="name" name="name" type="text" required placeholder="Frankenstein" /></label>
+        <label id="email-label" for="email">Email: <input class="inline" id="email" name="email" type="email" required placeholder="1ma5uper6rain@gmail.com" /></label>
+      </fieldset>
+      <fieldset
+        <legend>Account type (required)</legend>
+        <label for="personal-account" >
+          <input id="personal-account" class="inline" name="account-type" checked type="radio" value="1" /> Personal account
+        </label>
+        <label for="business-account" >
+          <input id="business-account" class="inline" name="account-type" type="radio" value="2" /> Business account
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Would you like us to know why you're here?
+          <select id="dropdown" name="dropdown">
+            <option value="""">Just do it here!</option>
+            <option value="1" >I feel you are good</option>
+            <option value="2" >I think you are good</option>
+            <option value="3" >I know you are good</option>
+            <option value="4" >I'm different than that!</select>
+        </label>
+        <label for="dropdown">Would you like us to know how you're here?
+          <select id="dropdown" name="dropdown">
+            <option value="""">Just do it here!</option>
+            <option value="1" > From Humanity YouTube</option>
+            <option value="2" >From Humanity social media</option>
+            <option value="3" >From recommendations</option>
+            <option value="4" >I'm different than that!</select>
+        </label>
+            <label id="number-label" for="number" >Age: <input class="inline" id="number" required type="number" min="3" max="200" placeholder="156" /></label>
+        </label>
+        <label for="bio">Would you like to provide a bio?
+          <textarea id="bio" cols="30" rows="3" name="bio" placeholder="I was born in Humanity!" ></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
